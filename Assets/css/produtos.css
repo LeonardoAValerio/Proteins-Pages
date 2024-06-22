@@ -1,0 +1,42 @@
+.intro{
+    background-image: url(../img/img-products/backProdutos.png);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: #F0F0EA;
+}
+
+.intro h1{
+    font-size: 5.6rem;
+}
+
+.intro h1 span{
+    color: #f9b838;
+}
+
+.intro h2{
+    font-size: 4.8rem;
+    font-weight: 300;
+}
+
+@media (max-width: 80rem){
+    .intro{
+        text-align: center;
+    }
+    
+    .intro h1{
+        font-size: 4rem;
+    }
+
+    .intro h2{
+        font-size: 3.2rem;
+    }
+
+}

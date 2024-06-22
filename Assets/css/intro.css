@@ -1,7 +1,7 @@
 /*INTRO*/
 .intro{
     min-height: 90vh;
-    background-image: url('../img/grama.png');
+    background-image: url('../img/img-intro/grama.png');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -87,7 +87,7 @@ h2 span{
     margin: 0 4rem;
 }
 
-img{
+.main-content img{
     width: 30%;
 }
 
@@ -169,10 +169,12 @@ img{
     margin-top: auto;
     margin-left: auto;
     font-size: 1.6rem;
+    color: #F9B838;
 }
 
 .product img{
     width: 80%;
+    max-width: 20rem;
 }
 
 .product:hover{
@@ -255,7 +257,7 @@ img{
         margin: 4rem 0;
     }
     
-    img{
+    .main-content img{
         width: 60%;
         max-width: 30rem;
     }
