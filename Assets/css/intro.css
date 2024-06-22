@@ -141,7 +141,7 @@ img{
 
 .product{
     border: 0.1rem solid #d9d9d9;
-    width: 30rem;
+    width: 23%;
     height: 45rem;
     border-radius: 2rem;
     display: flex;
@@ -168,7 +168,7 @@ img{
 
 .product p{
     margin-top: 2rem;
-    font-size: 2.4rem;
+    font-size: 1.6rem;
 }
 
 .product .saibaMais{
@@ -268,8 +268,8 @@ img{
 
     /*PRODUTOS*/
     .product{
-        width: 18rem;
-        height: 30rem;
+        width: 40%;
+        height: 100%;
         margin: 2rem 0;
     }
     
@@ -288,6 +288,6 @@ img{
     .product .saibaMais{
         margin-top: auto;
         margin-left: auto;
-        font-size: 0.8rem;
+        font-size: 1.6rem;
     }
 }
