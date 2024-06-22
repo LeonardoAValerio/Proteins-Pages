@@ -1,7 +1,6 @@
 /*INTRO*/
 .intro{
-    min-height: 100vh;
-    background-color: var(--color-dark1);
+    min-height: 90vh;
     background-image: url('../img/grama.png');
     background-repeat: no-repeat;
     background-position: center top;
@@ -13,14 +12,14 @@
 
 .darkness{
     position: absolute;
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
 }
 
 .introduction{
     z-index: 1;
-    width: 50%;
+    width: 70%;
     margin: 5%;
 }
 
@@ -29,7 +28,7 @@
 }
 
 .intro-banner h1{
-    font-size: 4.8rem;
+    font-size: 4rem;
     color: #F0F0EA;
 }
 
@@ -39,7 +38,7 @@
 
 .intro-banner h2{
     color: #F0F0EA;
-    font-size: 4rem;
+    font-size: 3.2rem;
 }
 
 .intro-text{
@@ -62,11 +61,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.sections.green{
-    background: #46594e;
-    color: #F0F0EA;
 }
 
 .sections h2{
