@@ -1,3 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #46594E;
+    color: black;
+}
+
 .intro{
     background-image: url(../img/img-tenebrium/backTenebrium.png);
     width: 100%;
@@ -26,61 +35,432 @@
     font-weight: 300;
 }
 
-.sections{
-    min-height: 90vh;
-    padding: 4rem 0;
-    background: #f2f2f2;
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 3%;
+}
+
+.header-background {
+    background-image: url('tenebrio bonitinho.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.sections.green{
-    background: #46594e;
-    color: #F0F0EA;
+.header-content {
+    text-align: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.content-text p{
-    margin: 1rem 0;
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-.sections h2{
-    font-size: 5.6rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+.header-content h1 span {
+    font-weight: bold;
+    color: #FFA500;
 }
 
-h2 span{
-    color: #f9b838;
+.header-content h2 {
+    font-weight: lighter;
+    margin: 0;
+    font-size: 2.0em;
 }
 
-.flex-content{
+#sobre {
+    background-color: #46594E;
+    padding: 50px;
+    color: #F2F2F2;
+    margin: 0;
     display: flex;
-    justify-content: baseline;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    min-height: calc(100vh - 300px); 
+    text-align: left; 
+    overflow: hidden; /* Previne overflow */
 }
 
-.content-text{
-    width: 80%;
-    height: 100%;
-    font-size: 2.4rem;
+#sobre h3 {
+    font-size: 4.0em;
+    text-align: left; 
+    margin-bottom: 20px; 
+}
+
+#sobre h3 span {
+    color: #FFA500;
+}
+
+#sobre p {
+    word-break: initial;
+    font-size: 2.4em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    text-align: left; 
+    margin-top: 0; 
+    max-width: 100%; /* Garante que o texto não ultrapasse a largura do contêiner */
+}
+
+#ciclo-de-vida {
+    background-color: #46594E;
+    border-radius: 8px;
+    padding: 20px;
+    color: #F2F2F2;
+}
+
+#ciclo-de-vida h3 {
+    font-size: 2.4em;
+    text-align: center;
+}
+
+#ciclo-de-vida h3 span {
+    color: #FFA500;
+}
+
+#ciclo-de-vida .ciclo-imagens {
     display: flex;
-    flex-flow: column nowrap;
     justify-content: space-around;
-    margin: 0 4rem;
+    align-items: center;
+    margin-top: 2%;
+    flex-wrap: wrap; /* Para que as imagens se ajustem em dispositivos menores */
 }
 
-@media (max-width: 80rem){
-    .intro{
-        text-align: center;
+#ciclo-de-vida .fase {
+    text-align: center;
+    margin-bottom: 20px; /* Para dar espaçamento entre as fases em dispositivos menores */
+}
+
+#ciclo-de-vida .fase .circulo {
+    width: 200px;
+    height: 200px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+#ciclo-de-vida .fase img {
+    width: 120px;
+    height: 120px;
+}
+
+#ciclo-de-vida .fase p {
+    font-size: 1.5em;
+}
+
+#vantagens {
+    background-color: #F2F2F2;
+    border-radius: 0;
+    padding: 20px;
+    color: black;
+    margin: -55px;
+}
+
+#vantagens h3 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#vantagens h3 span {
+    color: #FFA500;
+}
+
+#vantagens .vantagens-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    margin-top: 0;
+}
+
+.vantagem {
+    background-color: #D9D9D9;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    width: 200px;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.vantagem img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.vantagem p {
+    font-weight: bolder;
+    font-size: 1.2em;
+    color: black;
+    margin: 0;
+}
+
+#produtos {
+    background-color: #F2F2F2;
+    border-radius: 0;
+    padding: 50px;
+    color: black;
+    margin: -55px;
+}
+
+#produtos h3 {
+    margin-bottom: 25px;
+    text-align: left;
+    margin-left: 15%;
+    font-size: 2.5em;
+}
+
+#produtos p {
+    margin-top: 25px;
+    margin-left: 15%;
+    text-align: left;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #FFCC33;
+    border: none;
+    color: black;
+    padding: 10px 60px;
+    margin-right: 50%;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+button:hover {
+    background-color: #e59400;
+}
+
+@media (max-width: 1200px) {
+    main {
+        padding: 10px;
     }
-    
-    .intro h1{
-        font-size: 4rem;
+}
+
+@media (max-width: 992px) {
+    .header-content h1 {
+        font-size: 2em;
     }
 
-    .intro h2{
-        font-size: 3.2rem;
+    .header-content h2 {
+        font-size: 1.5em;
     }
-    
+
+    #sobre h3 {
+        font-size: 2em;
+    }
+
+    #sobre p {
+        font-size: 1.4em;
+    }
+
+    #ciclo-de-vida h3 {
+        font-size: 2em;
+    }
+
+    #ciclo-de-vida .fase p {
+        font-size: 1.2em;
+    }
+
+    #vantagens h3 {
+        font-size: 2em;
+    }
+
+    .vantagem p {
+        font-size: 1em;
+    }
+
+    #produtos h3 {
+        font-size: 2em;
+        margin-left: 10%;
+    }
+
+    #produtos p {
+        font-size: 1em;
+        margin-left: 10%;
+    }
+
+    button {
+        font-size: 1.2em;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 1.5em;
+    }
+
+    .header-content h2 {
+        font-size: 1.2em;
+    }
+
+    #sobre {
+        padding: 20px;
+        min-height: auto; 
+    }
+
+    #sobre h3 {
+        font-size: 1.5em;
+    }
+
+    #sobre p {
+        font-size: 1.2em;
+    }
+
+    #ciclo-de-vida h3 {
+        font-size: 1.5em;
+    }
+
+    #ciclo-de-vida .fase .circulo {
+        width: 150px;
+        height: 150px;
+    }
+
+    #ciclo-de-vida .fase img {
+        width: 90px;
+        height: 90px;
+    }
+
+    #ciclo-de-vida .fase p {
+        font-size: 1em;
+    }
+
+    #vantagens h3 {
+        font-size: 1.5em;
+    }
+
+    .vantagem {
+        width: 150px;
+    }
+
+    .vantagem img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .vantagem p {
+        font-size: 0.9em;
+    }
+
+    #produtos {
+        padding: 50px; 
+        margin: 0; 
+    }
+
+    #produtos h3 {
+        font-size: 1.5em;
+        margin-left: 10%;
+    }
+
+    #produtos p {
+        font-size: 0.9em;
+        margin-left: 10%;
+    }
+
+    button {
+        font-size: 1em;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-background {
+        height: 200px;
+    }
+
+    .header-content h1 {
+        font-size: 1.2em;
+    }
+
+    .header-content h2 {
+        font-size: 1em;
+    }
+
+    #sobre h3 {
+        font-size: 1.2em;
+    }
+
+    #sobre p {
+        font-size: 1em;
+    }
+
+    #ciclo-de-vida h3 {
+        font-size: 1.2em;
+    }
+
+    #ciclo-de-vida .fase .circulo {
+        width: 100px;
+        height: 100px;
+    }
+
+    #ciclo-de-vida .fase img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #ciclo-de-vida .fase p {
+        font-size: 0.8em;
+    }
+
+    #vantagens h3 {
+        font-size: 1.2em;
+    }
+
+    .vantagem {
+        width: 100px;
+    }
+
+    .vantagem img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .vantagem p {
+        font-size: 0.8em;
+    }
+
+    #produtos {
+        padding: 10px; 
+        margin: -10px; 
+    }
+
+    #produtos h3 {
+        font-size: 1.2em;
+        margin-left: 5%;
+    }
+
+    #produtos p {
+        font-size: 0.8em;
+        margin-left: 5%;
+    }
+
+    button {
+        font-size: 0.8em;
+        padding: 5px 30px;
+        margin-left: 20px;
+    }
 }
