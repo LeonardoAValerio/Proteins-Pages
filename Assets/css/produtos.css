@@ -26,6 +26,19 @@
     font-weight: 300;
 }
 
+.little-section{
+    color: #F0F0EA;
+    height: 20vh;
+    background: #46594e;
+    display: flex;
+    align-items: center;
+}
+
+.little-section h2{
+    margin-left: 2rem;
+    font-size: 4rem;
+}
+
 .sections{
     min-height: 90vh;
     padding: 4rem 0;
@@ -51,6 +64,7 @@ h2 span{
 
 .flex-content{
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -67,7 +81,6 @@ h2 span{
 
 .main-content img{
     width: 50%;
-    border-radius: 4rem;
     max-width: 40rem;
 }
 
@@ -101,5 +114,4 @@ h2 span{
     .intro h2{
         font-size: 3.2rem;
     }
-
 }

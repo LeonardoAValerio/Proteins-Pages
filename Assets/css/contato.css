@@ -59,13 +59,3 @@ img{
 .button:hover{
     transform: scale(1.1);
 }
-
-@media (max-width: 80rem){
-    .sections h2{
-        font-size: 3.2rem;
-    }
-
-    .content-text{
-        font-size: 2.4rem;
-    }
-}

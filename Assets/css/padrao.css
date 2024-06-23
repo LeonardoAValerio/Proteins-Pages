@@ -16,6 +16,11 @@ body{
 /*HEADER*/
 .img_logo_header{
     width: 17.5rem;
+    transition: all ease-in-out 300ms;
+}
+
+.img_logo_header:hover{
+    transform: scale(1.1);
 }
 
 .header,
