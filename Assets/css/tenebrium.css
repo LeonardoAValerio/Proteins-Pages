@@ -1,13 +1,12 @@
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     box-sizing: border-box;
-    background-color: #46594E;
-    color: black;
+    background-color: #F2F2F2;
 }
 
-.intro{
+.intro {
     background-image: url(../img/img-tenebrium/backTenebrium.png);
     width: 100%;
     background-position: center;
@@ -22,445 +21,183 @@ body {
     color: #F0F0EA;
 }
 
-.intro h1{
+.intro h1 {
     font-size: 5.6rem;
+    margin: -25px;
+    font-weight: bold;
 }
 
-.intro h1 span{
+.intro h1 span {
     color: #f9b838;
 }
 
-.intro h2{
+.intro h2 {
     font-size: 4.8rem;
     font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-section {
-    margin-bottom: 3%;
-}
-
-.header-background {
-    background-image: url('tenebrio bonitinho.jpeg'); 
-    background-size: cover;
-    background-position: center;
-    height: 300px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.header-content {
-    text-align: center;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.header-content h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-.header-content h1 span {
-    font-weight: bold;
-    color: #FFA500;
-}
-
-.header-content h2 {
-    font-weight: lighter;
-    margin: 0;
-    font-size: 2.0em;
-}
-
-#sobre {
-    background-color: #46594E;
-    padding: 50px;
-    color: #F2F2F2;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    justify-content: center;
-    min-height: calc(100vh - 300px); 
-    text-align: left; 
-    overflow: hidden; /* Previne overflow */
-}
-
-#sobre h3 {
-    font-size: 4.0em;
-    text-align: left; 
-    margin-bottom: 20px; 
-}
-
-#sobre h3 span {
-    color: #FFA500;
-}
-
-#sobre p {
-    word-break: initial;
-    font-size: 2.4em;
-    line-height: 1.5;
-    margin-bottom: 1em;
-    text-align: left; 
-    margin-top: 0; 
-    max-width: 100%; /* Garante que o texto não ultrapasse a largura do contêiner */
-}
-
-#ciclo-de-vida {
-    background-color: #46594E;
-    border-radius: 8px;
-    padding: 20px;
-    color: #F2F2F2;
-}
-
-#ciclo-de-vida h3 {
-    font-size: 2.4em;
+.sections {
+    padding: 10px;
     text-align: center;
 }
 
-#ciclo-de-vida h3 span {
-    color: #FFA500;
+.sections.green {
+    background: #46594E;
+    color: #F2F2F2;
 }
 
-#ciclo-de-vida .ciclo-imagens {
+.sections h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.sections h2 span {
+    color: #f9b838;
+}
+
+.content-text {
+    max-width: 800px;
+    margin-left: 50px;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.life-cycle {
+    background-color: #46594E;
+    margin-top: -50px;
+}
+
+.cycle-stages {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-top: 2%;
-    flex-wrap: wrap; /* Para que as imagens se ajustem em dispositivos menores */
+    flex-wrap: wrap;
 }
 
-#ciclo-de-vida .fase {
+.stage {
+    margin: 20px;
     text-align: center;
-    margin-bottom: 20px; /* Para dar espaçamento entre as fases em dispositivos menores */
 }
 
-#ciclo-de-vida .fase .circulo {
+.circle {
     width: 200px;
     height: 200px;
-    background-color: #F2F2F2;
+    background-color: #fff;
     border-radius: 50%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 10%;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-#ciclo-de-vida .fase img {
-    width: 120px;
-    height: 120px;
+.circle img {
+    width: 80%;
+    height: auto;
 }
 
-#ciclo-de-vida .fase p {
-    font-size: 1.5em;
+.stage p {
+    font-size: 1.6rem;
+    color: #F2F2F2;
 }
 
-#vantagens {
+.advantages {
     background-color: #F2F2F2;
-    border-radius: 0;
-    padding: 20px;
-    color: black;
-    margin: -55px;
 }
 
-#vantagens h3 {
-    font-size: 2.5em;
-    text-align: center;
-}
-
-#vantagens h3 span {
-    color: #FFA500;
-}
-
-#vantagens .vantagens-lista {
+.advantage-list {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; 
-    margin-top: 0;
+    flex-wrap: wrap;
 }
 
-.vantagem {
-    background-color: #D9D9D9;
-    border: 1px solid #ddd;
-    border-radius: 30px;
-    width: 200px;
-    margin: 10px;
-    padding: 30px;
-    text-align: center;
+.advantage {
+    background-color: #fff;
+    border-radius: 8%;
+    padding: 10px;
+    width: 250px;
+    height: 120px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.vantagem img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+.advantage img {
+    width: 70px;
+    height: 60px;
+    margin-right: 8px;
 }
 
-.vantagem p {
+.advantage p {
+    font-size: 1.2rem;
+    text-align: center;
     font-weight: bolder;
-    font-size: 1.2em;
-    color: black;
-    margin: 0;
 }
 
-#produtos {
+.products {
     background-color: #F2F2F2;
-    border-radius: 0;
-    padding: 50px;
-    color: black;
-    margin: -55px;
+    text-align: left;
+    margin-left: 50px;
 }
 
-#produtos h3 {
-    margin-bottom: 25px;
-    text-align: left;
-    margin-left: 15%;
-    font-size: 2.5em;
+.products p {
+    font-size: 1.6rem;
 }
 
-#produtos p {
-    margin-top: 25px;
-    margin-left: 15%;
-    text-align: left;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-button {
-    background-color: #FFCC33;
-    border: none;
-    color: black;
-    padding: 10px 60px;
-    margin-right: 50%;
-    text-align: left;
-    text-decoration: none;
+.learn-more {
     display: inline-block;
-    font-size: 1.5em;
-    border-radius: 25px;
-    cursor: pointer;
-    margin-left: 200px;
+    margin-top: 10px;
+    padding: 15px 60px;
+    background-color: #ffa500;
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 
-button:hover {
-    background-color: #e59400;
-}
-
-@media (max-width: 1200px) {
-    main {
-        padding: 10px;
+@media (max-width: 80rem){
+    .intro{
+        text-align: center;
     }
-}
-
-@media (max-width: 992px) {
-    .header-content h1 {
-        font-size: 2em;
+    
+    .intro h1{
+        font-size: 3.2rem;
     }
 
-    .header-content h2 {
-        font-size: 1.5em;
+    .intro h2{
+        font-size: 2.4rem;
     }
 
-    #sobre h3 {
-        font-size: 2em;
+    .sections h2 {
+        font-size: 2rem;
     }
 
-    #sobre p {
-        font-size: 1.4em;
+    .content-text {
+        font-size: 0.9rem;
     }
-
-    #ciclo-de-vida h3 {
-        font-size: 2em;
+    .life-cycle {
+        width: 96vw;
     }
-
-    #ciclo-de-vida .fase p {
-        font-size: 1.2em;
-    }
-
-    #vantagens h3 {
-        font-size: 2em;
-    }
-
-    .vantagem p {
-        font-size: 1em;
-    }
-
-    #produtos h3 {
-        font-size: 2em;
-        margin-left: 10%;
-    }
-
-    #produtos p {
-        font-size: 1em;
-        margin-left: 10%;
-    }
-
-    button {
-        font-size: 1.2em;
-        margin-left: 100px;
-    }
-}
-
-@media (max-width: 768px) {
-    .header-content h1 {
-        font-size: 1.5em;
-    }
-
-    .header-content h2 {
-        font-size: 1.2em;
-    }
-
-    #sobre {
-        padding: 20px;
-        min-height: auto; 
-    }
-
-    #sobre h3 {
-        font-size: 1.5em;
-    }
-
-    #sobre p {
-        font-size: 1.2em;
-    }
-
-    #ciclo-de-vida h3 {
-        font-size: 1.5em;
-    }
-
-    #ciclo-de-vida .fase .circulo {
-        width: 150px;
-        height: 150px;
-    }
-
-    #ciclo-de-vida .fase img {
-        width: 90px;
-        height: 90px;
-    }
-
-    #ciclo-de-vida .fase p {
-        font-size: 1em;
-    }
-
-    #vantagens h3 {
-        font-size: 1.5em;
-    }
-
-    .vantagem {
-        width: 150px;
-    }
-
-    .vantagem img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .vantagem p {
-        font-size: 0.9em;
-    }
-
-    #produtos {
-        padding: 50px; 
-        margin: 0; 
-    }
-
-    #produtos h3 {
-        font-size: 1.5em;
-        margin-left: 10%;
-    }
-
-    #produtos p {
-        font-size: 0.9em;
-        margin-left: 10%;
-    }
-
-    button {
-        font-size: 1em;
-        margin-left: 50px;
-    }
-}
-
-@media (max-width: 576px) {
-    .header-background {
-        height: 200px;
-    }
-
-    .header-content h1 {
-        font-size: 1.2em;
-    }
-
-    .header-content h2 {
-        font-size: 1em;
-    }
-
-    #sobre h3 {
-        font-size: 1.2em;
-    }
-
-    #sobre p {
-        font-size: 1em;
-    }
-
-    #ciclo-de-vida h3 {
-        font-size: 1.2em;
-    }
-
-    #ciclo-de-vida .fase .circulo {
+    .circle {
         width: 100px;
         height: 100px;
     }
 
-    #ciclo-de-vida .fase img {
+    .circle img {
         width: 60px;
-        height: 60px;
     }
 
-    #ciclo-de-vida .fase p {
-        font-size: 0.8em;
+    .stage p,
+    .advantage p {
+        font-size: 0.9rem;
     }
 
-    #vantagens h3 {
-        font-size: 1.2em;
+    .advantage img {
+        width: 60px;
     }
-
-    .vantagem {
-        width: 100px;
-    }
-
-    .vantagem img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .vantagem p {
-        font-size: 0.8em;
-    }
-
-    #produtos {
-        padding: 10px; 
-        margin: -10px; 
-    }
-
-    #produtos h3 {
-        font-size: 1.2em;
-        margin-left: 5%;
-    }
-
-    #produtos p {
-        font-size: 0.8em;
-        margin-left: 5%;
-    }
-
-    button {
-        font-size: 0.8em;
-        padding: 5px 30px;
-        margin-left: 20px;
-    }
+    
 }
