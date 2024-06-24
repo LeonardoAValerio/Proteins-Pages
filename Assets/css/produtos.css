@@ -70,6 +70,7 @@ h2 span{
 }
 
 .content-text{
+    min-width: 30rem;
     width: 50%;
     height: 100%;
     font-size: 1.6rem;

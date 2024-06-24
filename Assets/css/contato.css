@@ -24,6 +24,7 @@ h2 span{
 }
 
 .content-text{
+    min-width: 30rem;
     width: 60%;
     height: 100%;
     font-size: 3.2rem;

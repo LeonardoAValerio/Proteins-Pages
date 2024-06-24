@@ -67,10 +67,14 @@ h2 span{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
+}
+
+.margined{
     margin: 0 4rem;
 }
 
 .main-content img{
+    min-width: 30rem;
     width: 35%;
     border-radius: 4rem;
     max-width: 30rem;
@@ -110,5 +114,6 @@ h2 span{
 
     .text-production{
         width: 60%;
+        min-width: 30rem;
     }
 }
