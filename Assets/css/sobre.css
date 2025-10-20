@@ -27,7 +27,7 @@
 }
 
 .sections{
-    min-height: 90vh;
+    min-height: 50vh;
     padding: 4rem 0;
     background: #f2f2f2;
     display: flex;
